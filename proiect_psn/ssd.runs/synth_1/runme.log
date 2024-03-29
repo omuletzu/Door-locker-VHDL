@@ -1,0 +1,286 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 393.234 ; gain = 67.062
+Command: read_checkpoint -auto_incremental -incremental D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21684
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1203.023 ; gain = 408.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:14]
+INFO: [Synth 8-3491] module 'num_15b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/num_15b.vhd:5' bound to instance 'p1' of component 'num_15b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'num_15b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/num_15b.vhd:10]
+WARNING: [Synth 8-614] signal 'aux' is read in the process but is not in the sensitivity list [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/num_15b.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'num_15b' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/num_15b.vhd:10]
+INFO: [Synth 8-3491] module 'mux4' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/mux4.vhd:5' bound to instance 'p2' of component 'mux4' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'mux4' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/mux4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/mux4.vhd:11]
+INFO: [Synth 8-3491] module 'mux8' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/mux8.vhd:5' bound to instance 'p3' of component 'mux8' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mux8' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/mux8.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux8' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/mux8.vhd:11]
+INFO: [Synth 8-3491] module 'Numarator_rev_1_15' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Numarator_rev_1_15.vhd:5' bound to instance 'p4' of component 'Numarator_rev_1_15' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'Numarator_rev_1_15' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Numarator_rev_1_15.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Numarator_rev_1_15' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Numarator_rev_1_15.vhd:13]
+INFO: [Synth 8-3491] module 'SSD_DEC' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/SSD_DEC.vhd:4' bound to instance 'p5' of component 'SSD_DEC' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'SSD_DEC' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/SSD_DEC.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'SSD_DEC' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/SSD_DEC.vhd:14]
+INFO: [Synth 8-3491] module 'Registru_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:5' bound to instance 'p6' of component 'Registru_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'Registru_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Registru_4b' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:14]
+INFO: [Synth 8-3491] module 'Registru_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:5' bound to instance 'p7' of component 'Registru_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:144]
+INFO: [Synth 8-3491] module 'Registru_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:5' bound to instance 'p8' of component 'Registru_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:150]
+INFO: [Synth 8-3491] module 'Registru_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:5' bound to instance 'p9' of component 'Registru_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:156]
+INFO: [Synth 8-3491] module 'Registru_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Registru_4b.vhd:5' bound to instance 'p10' of component 'Registru_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:162]
+INFO: [Synth 8-3491] module 'UC' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/UC.vhd:4' bound to instance 'p12' of component 'UC' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'UC' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/UC.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'UC' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/UC.vhd:23]
+INFO: [Synth 8-3491] module 'Comparator_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Comparator_4b.vhd:25' bound to instance 'p13' of component 'Comparator_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'Comparator_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Comparator_4b.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Comparator_4b' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Comparator_4b.vhd:32]
+INFO: [Synth 8-3491] module 'Comparator_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Comparator_4b.vhd:25' bound to instance 'p14' of component 'Comparator_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:192]
+INFO: [Synth 8-3491] module 'Comparator_4b' declared at 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/Comparator_4b.vhd:25' bound to instance 'p15' of component 'Comparator_4b' [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'main' (0#1) [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/sources_1/new/main.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1295.629 ; gain = 501.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1295.629 ; gain = 501.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1295.629 ; gain = 501.012
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1295.629 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1361.281 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stare_reg' in module 'UC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     st0 |                             0000 |                             0000
+                     st1 |                             0001 |                             0001
+                     st2 |                             0010 |                             0010
+                     st3 |                             0011 |                             0011
+                     st4 |                             0100 |                             0100
+                     st5 |                             0101 |                             0101
+                     st6 |                             0110 |                             0110
+                     st7 |                             0111 |                             0111
+                     st8 |                             1000 |                             1000
+                     st9 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stare_reg' using encoding 'sequential' in module 'UC'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 12    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 22    
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+	   4 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     4|
+|4     |LUT2   |     6|
+|5     |LUT3   |     2|
+|6     |LUT4   |    15|
+|7     |LUT5   |    22|
+|8     |LUT6   |    30|
+|9     |MUXF7  |     1|
+|10    |FDRE   |    93|
+|11    |FDSE   |     7|
+|12    |IBUF   |     7|
+|13    |OBUF   |    13|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1361.281 ; gain = 501.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1361.281 ; gain = 566.664
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1361.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b889b143
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:17 . Memory (MB): peak = 1361.281 ; gain = 943.211
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/Proiect_cod_cifru/proiect_psn/ssd.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 29 14:51:26 2024...
