@@ -132,7 +132,7 @@ To highlight the links between the control unit and the execution unit, it is ne
  - *15-bit counter* – has only the clock as input. It will count in 15 bits from 0 to the maximum value and output that number.
 
 
-  **Posibilități de dezvoltări ulterioare**
+  **Possibilities of further developments**
   
   - Expanding the possibilities of choosing characters for the cipher, so the code could be much more difficult for someone else to guess. Instead of characters 0 to F, we can have 0 to Z.
     
