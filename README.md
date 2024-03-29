@@ -67,10 +67,6 @@ To highlight the links between the control unit and the execution unit, it is ne
 
   *Block diagram of the first decomposition*
 
-- **Detailed scheme of the project**
-
-  
-    ![image](https://github.com/omuletzu/Door-locker-VHDL/assets/75565975/85790147-6042-4e91-8233-258d082cb333)
 
 
 - **Operation and Maintenance Manual**
